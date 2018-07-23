@@ -4,9 +4,9 @@
 
 {% block content %}
     <section class="section section-home">
-        <div class="container">
-            {#<svg id="svg-01" class="svg--route-main" viewBox="0 0 1349 1994.7" data-png="{{ theme.link }}/assets/images/nav-journey-path.png"></svg>#}
-            {#<p class="text-tagline js-animated-text before-animate">It’s a journey that’s always changing directions</p>#}
+        <div class="container page-home">
+            <svg id="svg-01" class="svg--route-main" viewBox="0 0 1349 1994.7" data-png={{ theme.link }}/assets/images/nav-journey-path.png"></svg>
+            <p class="text-tagline js-animated-text before-animate">It’s a journey that’s always changing directions</p>
             <div class="scrollable-section block-section scrollable--dynamic home-section--video" data-path-progress="0.35" data-section-name="home-model-video">
                 <div class="home-video-container">
                     <video id="example_video_1" class="video-js vjs-default-skin" preload="none" width="640" height="360" data-setup='{ "html5" : { "nativeTextTracks" : false } }' muted autoplay="true" loop="false" controls="false" playsinline>
@@ -14,6 +14,32 @@
                         <img src="{{ theme.link }}/assets/images/video-placeholder.jpg" alt="Your Life">
                         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                     </video>
+                </div>
+            </div>
+            <div class="scrollable-section block-section home-section--2 scrollable--dynamic" data-path-progress="0.5" data-section-name="home-model-1">
+                <img src="{{ theme.link }}/assets/images/model-4.png" class="abs-image abs-image-model-4" alt="Man on Bicycle">
+            </div>
+
+            <div class="scrollable-section block-section home-section--3 scrollable--dynamic" data-path-progress="0.8" data-section-name="home-model-2">
+                <img src="{{ theme.link }}/assets/images/model-8.png" class="abs-image abs-image-model-8" alt="Man playing guitar">
+                <div class="box-captions js-animated-item before-animate">
+                    <span class="box-captions__content">But no matter where you're headed, one thing won't change: <br>You want your finances to be in good shape.</span>
+                </div>
+            </div>
+
+            <div class="scrollable-section block-section home-section--4 scrollable--dynamic" data-path-progress="1" data-section-name="home-model-3">
+                <img src="{{ theme.link }}/assets/images/model-7.png" class="abs-image abs-image-model-7" alt="Woman walking">
+                <div class="box-captions js-animated-item before-animate">
+                    <span class="box-captions__content">To help you on your way,<br> and arrive where you want to be, <br>you need a navigator.</span>
+                </div>
+            </div>
+
+            <div class="scrollable-section block-section home-section--5 scrollable--dynamic" data-path-progress="1" data-section-name="five">
+                <div class="scrollable-section__content">
+                    <div class="nav-logo-centered">
+                        <img src="{{ theme.link }}/assets/images//nav-finanicial-gps.png" class="nav-logo-centered__img" alt="NAV - Your Financial GPS">
+                    </div>
+                    <h3 class="h3--home text-center">YOUR NAVIGATOR TO GUIDE YOU ON YOUR LIFE JOURNEY</h3>
                 </div>
             </div>
         </div>

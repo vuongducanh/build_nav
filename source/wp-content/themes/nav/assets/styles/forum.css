@@ -1,4 +1,4 @@
-charset "UTF-8";
+@charset "UTF-8";
 /* site */
 /* environment config */
 fieldset {
@@ -2825,13 +2825,13 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: left;
-      justify-content: left;
+  justify-content: left;
   -ms-flex-align: stretch;
-      align-items: stretch;
+  align-items: stretch;
 }
 
 .flex-row:before {
@@ -2840,34 +2840,34 @@ h5 {
 
 .flex-row.flex-row--centered {
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 
 .flex-col {
   -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 .flex-col.flex-col--grow {
   -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
 }
 
 .flex-col.flex-col--center {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .flex-col--mobile-full {
   -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 @media screen and (min-width: 768px) {
   .flex-col--mobile-full {
     -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
+    flex: 0 1 auto;
   }
 }
 
