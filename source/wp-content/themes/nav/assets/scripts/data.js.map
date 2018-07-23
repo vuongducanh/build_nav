@@ -1,0 +1,1 @@
+{"version":3,"sources":["data.js"],"names":["config","env","addthis_id","siteRoot","gtmId"],"mappings":"AAAA,IAAIA,SAAS;AACXC,OAAK,WADM;AAEXC,cAAY,qBAFD;AAGXC,YAAU,EAHC;AAIXC,SAAO;AAJI,CAAb","file":"data.js","sourcesContent":["var config = {\r\n  env: 'localhost',\r\n  addthis_id: 'ra-5acf185d4dfecad2',\r\n  siteRoot: '',\r\n  gtmId: 'GTM-LXGM'\r\n};"]}

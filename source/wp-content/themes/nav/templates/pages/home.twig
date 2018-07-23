@@ -1,0 +1,21 @@
+{% extends './templates/layouts/default.twig' %}
+
+{% set title = 'NAV - Your Financial Navigator' %}
+
+{% block content %}
+    <section class="section section-home">
+        <div class="container">
+            {#<svg id="svg-01" class="svg--route-main" viewBox="0 0 1349 1994.7" data-png="{{ theme.link }}/assets/images/nav-journey-path.png"></svg>#}
+            {#<p class="text-tagline js-animated-text before-animate">It’s a journey that’s always changing directions</p>#}
+            <div class="scrollable-section block-section scrollable--dynamic home-section--video" data-path-progress="0.35" data-section-name="home-model-video">
+                <div class="home-video-container">
+                    <video id="example_video_1" class="video-js vjs-default-skin" preload="none" width="640" height="360" data-setup='{ "html5" : { "nativeTextTracks" : false } }' muted autoplay="true" loop="false" controls="false" playsinline>
+                        <source src="{{ page.get_field('mp4_video')}}" type="video/mp4">
+                        <img src="{{ theme.link }}/assets/images/video-placeholder.jpg" alt="Your Life">
+                        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

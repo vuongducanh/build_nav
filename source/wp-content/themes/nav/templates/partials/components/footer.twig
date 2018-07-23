@@ -1,0 +1,15 @@
+<footer class="js-footer">
+    <div class="footer bg-color-secondary">
+        <div class="container">
+            <div class="footer--wrapper">
+                <div class="footer__title opensans--bold-italic text-color-tertiary">NAV is an initiative by DBS and POSB</div>
+                {{
+                function('wp_nav_menu', {
+                    'theme_location': 'footer-menu',
+                    'menu_class': 'footer__menu'
+                })
+                }}
+            </div>
+        </div>
+    </div>
+</footer>

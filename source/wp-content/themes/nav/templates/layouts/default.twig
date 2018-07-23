@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        {% if title is defined %} {{ title }}  {% else %} NAV {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="GENERATOR" content="MSHTML 11.00.9600.18838">
+
+    <link rel="stylesheet" href="{{ theme.link }}/assets/styles/main.css">
+    <link rel="stylesheet" href="{{ theme.link }}/assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="{{ theme.link }}/assets/libs/slick/slick.css">
+
+    {{ function('wp_head') }}
+
+</head>
+<body class="page-{{page_identifier}}" data-page="{{page_identifier}}">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{data.gtmId}}"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+{% if not withoutHeader %}
+     {% include './templates/partials/components/header.twig' %}
+{% endif %}
+
+<div class="main-content">
+    {% block content %}{% endblock %}
+</div>
+
+{% if not withoutfooter %}
+    {% include './templates/partials/components/footer.twig' %}
+{% endif %}
+
+<script type="text/javascript" src="{{ theme.link }}/assets/libs/jquery.min.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/libs/snap.svg.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/libs/video.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/animation.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/load-more-button.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/slider.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/sticky-menu.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/navigation.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/main.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/data.js"></script>
+<script type="text/javascript" src="{{ theme.link }}/assets/scripts/scroll-to-id.js"></script>
+
+{% include './templates/partials/components/ga.twig' %}
+{{ function('wp_footer') }}
+</body>
+</html>

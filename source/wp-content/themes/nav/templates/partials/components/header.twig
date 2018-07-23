@@ -1,0 +1,27 @@
+<header class="container-fluid-width">
+    <div class="header bg-color-secondary layout-top-most js-header">
+        <div class="container header--wrapper">
+            <nav class="navbar navbar-inverse bg-color-secondary no-bm header__nav">
+                <div class="navbar-header header__nav-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"
+                            aria-expanded="false">
+                        <span class="icon-hamburger"></span>
+                    </button>
+                    <a class="navbar-brand header__nav-logo" href="{{ site.url }}" target="">
+                        <img src="{{ theme.link }}/assets/images/logo.png" class="img-responsive navbar-brand--img__small">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse header__nav-collapse" id="nav-collapse">
+                    {{
+                    function('wp_nav_menu', {
+                        'theme_location': 'header-menu',
+                        'menu_class': 'nav navbar-nav js-active-link',
+                        'container': '',
+                    })
+                    }}
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
